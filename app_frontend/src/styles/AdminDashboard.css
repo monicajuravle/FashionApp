@@ -1,0 +1,64 @@
+/* AdminDashboard.css */
+
+/* Resetare stiluri globale pentru a elimina orice margini sau padding suplimentar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container principal pentru AdminDashboard */
+.admin-dashboard {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupă întreaga înălțime a paginii */
+    background-color: #f4f4f4; /* Culoare de fundal */
+}
+
+/* Stilizare navbar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Contenutul paginii care se află sub navbar */
+.content {
+    margin-top: 80px; /* Face loc pentru navbar-ul fixat */
+    padding: 20px;
+    text-align: center; /* Centrează textul */
+}
+
+/* Centrarea textului în mijloc */
+.center-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}

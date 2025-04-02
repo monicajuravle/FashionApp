@@ -1,0 +1,132 @@
+/* ClientDashboard.css */
+
+.client-dashboard-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: #ff4d4d; /* Roșu modern */
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: flex-start; /* Aliniere butoane spre stânga */
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+    width: 100%; /* Navbar-ul ocupă întreaga lățime a paginii */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-right: 20px; /* Distanță între logo și butoane */
+}
+
+.navbar-buttons {
+    display: flex;
+    gap: 15px; /* Distanța între butoane */
+}
+
+.navbar-btn {
+    padding: 8px 15px; /* Dimensiuni mai mici pentru butoane */
+    background-color: #fff;
+    color: #ff4d4d;
+    border: 1px solid #ff4d4d;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-btn:hover {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.content-area {
+    padding: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px; /* Asigură că conținutul nu se suprapune cu navbar-ul */
+}
+
+.welcome-message {
+    margin-bottom: 40px;
+}
+
+.welcome-message h1 {
+    font-size: 36px;
+    color: #ff4d4d;
+    margin-bottom: 10px;
+}
+
+.welcome-message p {
+    font-size: 18px;
+    color: #555;
+}
+
+.occasion-selection h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.scrollable-occasions {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Distanța între butoane */
+    overflow-x: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 100%;
+    background-color: #fff;
+}
+
+.occasion-btn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.occasion-btn:hover {
+    background-color: #c1352d;
+}
+
+/* Responsive design pentru dispozitive mai mici */
+@media (max-width: 768px) {
+    .navbar-logo {
+        font-size: 20px;
+    }
+
+    .navbar-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .welcome-message h1 {
+        font-size: 28px;
+    }
+
+    .occasion-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
